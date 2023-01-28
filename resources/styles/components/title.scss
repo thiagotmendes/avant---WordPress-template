@@ -1,0 +1,21 @@
+.main-title {
+  display: block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #1D1D1B;
+  line-height: 82px;
+
+  &--62px {
+    font-size: 62px;
+  }
+
+  &--32px {
+    font-size: 32px;
+  }
+
+  &--24px {
+    font-size: 24px;
+  }
+}
