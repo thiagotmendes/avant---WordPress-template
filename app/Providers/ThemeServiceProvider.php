@@ -14,6 +14,7 @@ class ThemeServiceProvider extends ServiceProvider
     public function register()
     {
         //
+
     }
 
     /**
@@ -24,5 +25,6 @@ class ThemeServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+
     }
 }

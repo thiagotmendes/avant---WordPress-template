@@ -6,7 +6,9 @@
 
 namespace App;
 
+use App\Extentions\ExtentionAcf;
 use function Roots\bundle;
+new ExtentionAcf();
 
 /**
  * Register the theme assets.
@@ -143,3 +145,27 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+/**
+ * Register custom post type
+ */
+add_action( 'init', function() {
+    register_extended_post_type( 'investimento', [
+        'plural'   => 'Investimentos',
+        "show_in_rest" => true,
+        "admin_cols" => [
+            'story_featured_image' => [
+                'title'          => 'Illustration',
+                'featured_image' => 'thumbnail'
+            ],
+            'investimento_categoria' => [
+                'taxonomy' => 'categoria'
+            ],
+        ],
+    ]);
+
+    register_extended_taxonomy("categoria", "investimento", [
+        "show_in_rest" => true,
+    ]);
+} );
+

@@ -1,0 +1,13 @@
+{
+  "name": "acf/imageslider",
+  "title": "Image Slider",
+  "description": "Slider de imagens",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["image slider", "image", "slider"],
+  "align": "full",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "block-imageSlider.php"
+  }
+}

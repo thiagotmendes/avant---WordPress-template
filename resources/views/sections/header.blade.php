@@ -2,7 +2,7 @@
   <div class="container no-gutters d-flex align-items-center justify-content-between">
     <a class="brand col-md-3" href="{{ home_url('/') }}">
       @php
-        echo (is_home())? "<h1>" . get_bloginfo('name') ."</h1>" : "<img src='".asset("images/logo.svg")."' alt='" . bloginfo('name') ."' class=\"img-fluid\">";
+        echo (is_home())? "<h1 class='brand-home'>" . get_bloginfo('name') ."</h1>" : "<img src='".asset("images/logo.svg")."' alt='" . get_bloginfo('name') ."' class=\"img-fluid\">";
       @endphp
     </a>
 
