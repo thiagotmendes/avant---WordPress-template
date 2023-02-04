@@ -1,6 +1,8 @@
 <?php
 namespace App\Extentions;
 
+use Extended\ACF\Fields\Gallery;
+use Extended\ACF\Fields\Select;
 use Extended\ACF\Fields\Text;
 use Extended\ACF\Location;
 
@@ -16,11 +18,32 @@ class ExtentionAcf {
         register_extended_field_group([
             'title' => 'About',
             'fields' => [
-                Text::make('Title'),
+                Gallery::make('Galeria de imagens', 'galery_image')
+                    ->returnFormat('url')
             ],
             'location' => [
                 Location::where('block', 'acf/imageslider')
             ],
+        ]);
+
+        register_extended_field_group([
+            'title' => 'Outras configurações',
+            'fields' => [
+                Text::make('Valor', 'valor'),
+                Select::make('Tipo de pagamento', 'tipo_valor')
+                    ->choices([
+                        'mensal' => 'Mensal',
+                        'diario' => 'Diario',
+                        'anual' => 'Anual'
+                    ])
+                    ->returnFormat('label')
+                    ->instructions('Ex: Mensal, Diário ou Anual'),
+                Text::make('Endereço', 'endereco')->required()
+            ],
+            'position' => 'side',
+            'location' => [
+                Location::where('post_type', 'investimento')
+            ]
         ]);
     }
 

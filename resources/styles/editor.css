@@ -9,3 +9,16 @@ html,body {
 .margin-right {
   margin-right: 1rem;
 }
+
+.is-type-video .wp-block-embed__wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.is-type-video .wp-block-embed__wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -11,3 +11,25 @@
   display: block;
   position: relative;
 }
+
+.breadcrumbs {
+  background-color: #D9D9D9;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  color: #868686;
+
+  p {
+    margin-bottom: 0;
+    margin-left: 10px;
+
+    a {
+      color: #868686;
+      text-decoration: none;
+    }
+  }
+
+  .last {
+    font-weight: 700;
+  }
+}

@@ -8,4 +8,27 @@
   &--bgblack {
     background-color: #1D1D1B;
   }
+
+  &__configuration {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000929;
+  }
+
+  &__price {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #7065F0;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      align-items: center;
+      color: #000929;
+    }
+  }
 }

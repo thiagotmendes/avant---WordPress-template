@@ -1,19 +1,33 @@
 <div class="galery_image swiper">
     <div class="swiper-wrapper">
-        <?php for ($i = 0; $i < 10; $i++): ?>
-        <div class="swiper-slide">
-            <img data-src="holder.js/100px400?textmode=literal">
-        </div>
-        <?php endfor; ?>
+        <?php
+        $galery = get_field('galery_image');
+        if($galery){
+            foreach ($galery as $images){
+                ?>
+                <div class="swiper-slide">
+                    <img src="<?= $images ?>" class="img-fluid">
+                </div>
+                <?php
+            }
+        }
+        ?>
     </div>
 </div>
 <div class="galery_image_thumb swiper" thumbsSlider="">
     <div class="swiper-wrapper">
-        <?php for ($i = 0; $i < 10; $i++): ?>
-            <div class="swiper-slide">
-                <img data-src="holder.js/100px100?textmode=literal">
-            </div>
-        <?php endfor; ?>
+        <?php
+        $galery = get_field('galery_image');
+        if($galery){
+            foreach ($galery as $images){
+                ?>
+                <div class="swiper-slide">
+                    <img src="<?= $images ?>" class="img-fluid">
+                </div>
+                <?php
+            }
+        }
+        ?>
     </div>
 </div>
 
