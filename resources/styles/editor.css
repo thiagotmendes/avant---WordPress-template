@@ -10,6 +10,10 @@ html,body {
   margin-right: 1rem;
 }
 
+.margin-left-5px {
+  margin-right: 5px;
+}
+
 .is-type-video .wp-block-embed__wrapper {
   position: relative;
   padding-bottom: 56.25%;

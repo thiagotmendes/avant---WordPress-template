@@ -1,9 +1,9 @@
 <footer class="main-footer mt-5 pt-5 pb-5">
   <div class="container d-flex justify-content-between">
-    <div class="">
+    <div class="main-footer__logo">
       <img src="{{ asset("images/footer-logo.png") }}" alt="" class="">
     </div>
-    <div class="d-flex w-75 justify-content-between">
+    <div class="main-footer__address d-flex w-75 justify-content-between">
       <!-- -->
       <div class="d-flex align-items-start justify-content-center">
         <img src="{{ asset("images/phone.png") }}" alt="" class="main-footer__icon">

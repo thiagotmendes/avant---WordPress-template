@@ -29,6 +29,15 @@
         top: 0;
         position: absolute;
         z-index: -1;
+
+        @media (max-width: 575px) {
+          background-image: none;
+        }
+      }
+
+      @media (max-width: 575px) {
+        color: #8C8888;
+        padding-left: 14px;
       }
     }
   }
@@ -50,18 +59,36 @@
       left: -50px;
       top: 200px;
       animation-name: floatItem1;
+
+      @media  (max-width: 575px) {
+        display: none;
+      }
     }
 
     &--img2 {
       left: 200px;
       top: -70px;
       animation-name: floatItem2;
+
+      @media  (max-width: 575px) {
+        display: none;
+      }
     }
 
     &--img3 {
       left: 300px;
       top: 150px;
       animation-name: floatItem3;
+
+      @media  (max-width: 575px) {
+        display: none;
+      }
+    }
+
+    img {
+      @media  (max-width: 575px) {
+        width: 100%;
+      }
     }
   }
 }

@@ -4,10 +4,8 @@
   @include('partials.breadcrumb')
   <section class="main-section">
     <div class="container">
-      @while(have_posts()) @php(the_post())
-        @include('partials.page-header')
-        @includeFirst(['partials.content-page', 'partials.content'])
-      @endwhile
+      @include('components.navgations.component-category-navigation')
+      @include('components.loop.component-loop-investimento')
     </div>
   </section>
 @endsection

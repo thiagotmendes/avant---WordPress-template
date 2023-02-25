@@ -12,13 +12,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
   }
 
   &__grid {
-    overflow: hidden;
     background: #FFFFFF;
     border: 1.5px solid #F0EFFB;
     border-radius: 8px;
+    position: relative;
 
     &--image {
       width: 100%;
@@ -64,5 +68,18 @@
     /* Shadow - xl */
     box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.04);
     border-radius: 14px;
+  }
+
+  &__image {
+    border-radius: 8px 8px 0px 0px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &--destaque {
+      position: absolute;
+      left: -10px;
+      top: 217px;
+    }
   }
 }

@@ -167,5 +167,9 @@ add_action( 'init', function() {
     register_extended_taxonomy("categoria", "investimento", [
         "show_in_rest" => true,
     ]);
+
+    register_extended_taxonomy("cidade", "investimento", [
+        "show_in_rest" => true,
+    ]);
 } );
 

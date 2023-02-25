@@ -4,6 +4,7 @@ namespace App\Extentions;
 use Extended\ACF\Fields\Gallery;
 use Extended\ACF\Fields\Select;
 use Extended\ACF\Fields\Text;
+use Extended\ACF\Fields\TrueFalse;
 use Extended\ACF\Location;
 
 class ExtentionAcf {
@@ -29,6 +30,7 @@ class ExtentionAcf {
         register_extended_field_group([
             'title' => 'Outras configurações',
             'fields' => [
+                TrueFalse::make('Destaque', 'is_destaque')->message("É destaque"),
                 Text::make('Valor', 'valor'),
                 Select::make('Tipo de pagamento', 'tipo_valor')
                     ->choices([

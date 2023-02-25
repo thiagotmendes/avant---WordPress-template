@@ -1,3 +1,7 @@
+h1, h2, h3, h4,h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
 .main-title {
   display: block;
   position: relative;
@@ -9,10 +13,20 @@
 
   &--62px {
     font-size: 62px;
+
+    @media (max-width: 575px) {
+      font-size: 45px;
+      line-height: 48px;
+    }
   }
 
   &--32px {
     font-size: 32px;
+
+    @media (max-width: 575px) {
+      font-size: 26px;
+      line-height: 26px;
+    }
   }
 
   &--24px {

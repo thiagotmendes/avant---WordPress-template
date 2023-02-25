@@ -8,5 +8,42 @@
 
   &__social {
     width: 10%;
+
+    @media (max-width: 575px) {
+      width: 100%;
+      justify-content: center !important;
+      margin-top: 1rem;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+  &__logo {
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+  }
+
+  .container {
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__address {
+    @media (max-width: 575px) {
+      margin-top: 1rem;
+      flex-direction: column;
+      width: 100% !important;
+      text-align: left;
+      align-items: flex-start;
+
+      div {
+        margin-top: 1rem;
+      }
+    }
   }
 }

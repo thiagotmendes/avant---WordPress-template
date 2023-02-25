@@ -12,16 +12,10 @@
         </p>
         <div class="main-box main-box__form-search mt-5">
           <div class="">
-            <label>Localização</label>
-            <select name="" id="">
-              <option value="">Governador Valadares</option>
-            </select>
+            @include("components.button.button-localizacao")
           </div>
           <div class="">
-            <label>Categoria</label>
-            <select name="" id="">
-              <option value="">Todos</option>
-            </select>
+            @include("components.button.button-categoria")
           </div>
           <div class="">
             <a href="" class="main-button main-button--orange">
@@ -31,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 offset-1">
+      <div class="col-md-4 offset-md-1">
         <div class="main-banner__box-image">
           <img src="{{ asset("images/mulher.png") }}" alt="" class="">
 
